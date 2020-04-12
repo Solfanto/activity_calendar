@@ -1,12 +1,13 @@
 class ActivityCalendar::Calendar
-  attr_reader :tile_width, :tile_height, :tile_spacing, :tile_data
+  attr_reader :tile_width, :tile_height, :tile_spacing, :tile_data, :date_format
 
   DEFAULT_ARGS = {
     default_color: "#ffffff",
     tile_width: 10,
     tile_height: 10,
     tile_spacing: 3,
-    tile_data: { toggle: "tooltip", placement: "top", html: "true" }
+    tile_data: { toggle: "tooltip", placement: "top", html: "true" },
+    date_format: "on %B %d, %Y"
   }.freeze
 
   def initialize(resource:, start_at:, end_at:, colors:, **args)
@@ -20,6 +21,7 @@ class ActivityCalendar::Calendar
     @tile_height = args[:tile_height] || DEFAULT_ARGS[:tile_height]
     @tile_spacing = args[:tile_spacing] || DEFAULT_ARGS[:tile_spacing]
     @tile_data = args[:tile_data] || DEFAULT_ARGS[:tile_data]
+    @date_format = args[:date_format] || DEFAULT_ARGS[:date_format]
   end
 
   def dates

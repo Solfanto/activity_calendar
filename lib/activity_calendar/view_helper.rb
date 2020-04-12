@@ -23,7 +23,7 @@ module ActivityCalendar::ViewHelper
           content_tag(
             :div,
             nil,
-            title: "<b>#{title}</b> on #{date.strftime('%B %d, %Y')}",
+            title: "<b>#{title}</b> #{date.strftime(calendar.date_format)}",
             style: "background-color: #{color}; width: #{calendar.tile_width}px; height: #{calendar.tile_height}px; "\
               "margin-bottom: #{calendar.tile_spacing}px; margin-right: #{calendar.tile_spacing}px;",
             data: calendar.tile_data
