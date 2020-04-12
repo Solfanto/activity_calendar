@@ -4,7 +4,7 @@ class TestController < ApplicationController
     @activity_calendar = ActivityCalendar::Calendar.new(
       resource: @user,
       start_at: 1.year.ago.beginning_of_week(:sunday),
-      end_at: Time.now.end_of_month,
+      end_at: Time.now,
       colors: {
         "#cce395" => {
           condition: ->(resource, date) { resource.commits_count_for(date).between?(1, 99) },
