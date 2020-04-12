@@ -1,4 +1,4 @@
-require 'memoist'
+require "memoist"
 
 class User
   include ActiveModel::Model
@@ -8,7 +8,7 @@ class User
     new
   end
 
-  def commits_count_for(date)
+  def commits_count_for(_date)
     rand(0..200)
   end
   memoize :commits_count_for

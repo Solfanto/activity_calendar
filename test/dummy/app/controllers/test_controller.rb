@@ -3,7 +3,7 @@ class TestController < ApplicationController
     @user = User.first
     @activity_calendar = ActivityCalendar::Calendar.new(
       resource: @user,
-      start_at: Time.now.beginning_of_month,
+      start_at: 1.year.ago.beginning_of_week(:sunday),
       end_at: Time.now.end_of_month,
       colors: {
         "#cce395" => {

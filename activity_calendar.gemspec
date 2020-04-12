@@ -1,4 +1,4 @@
-$:.push File.expand_path("lib", __dir__)
+$LOAD_PATH.push File.expand_path("lib", __dir__)
 
 # Maintain your gem's version:
 require "activity_calendar/version"
@@ -18,8 +18,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 6.0.2", ">= 6.0.2.2"
 
-  spec.add_development_dependency "sqlite3"
   spec.add_development_dependency "memoist"
   spec.add_development_dependency "rubocop"
-  spec.add_development_dependency "rubocop-rails"
+  spec.add_development_dependency "sqlite3"
 end
