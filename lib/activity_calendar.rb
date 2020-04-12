@@ -1,7 +1,5 @@
 require "activity_calendar/railtie"
+require "activity_calendar/calendar"
 
 module ActivityCalendar
-  def self.new(**args)
-
-  end
 end
