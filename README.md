@@ -22,7 +22,6 @@ Github-inspired activity calendar.
   },
   default_color: "#ebedf0",   # optional
   default_title: "no commit", # optional
-  default_color: "#ffffff",   # optional
   tile_width: 10,             # optional
   tile_height: 10,            # optional
   tile_spacing: 3,            # optional
