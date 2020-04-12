@@ -1,6 +1,6 @@
-require_relative 'boot'
+require_relative "boot"
 
-require 'rails/all'
+require "rails/all"
 
 Bundler.require(*Rails.groups)
 require "activity_calendar"
@@ -16,4 +16,3 @@ module Dummy
     # the framework and any gems in your application.
   end
 end
-

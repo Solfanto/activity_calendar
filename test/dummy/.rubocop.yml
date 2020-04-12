@@ -1,0 +1,53 @@
+require: rubocop-rails
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - node_modules/**/*
+    - bin/*
+
+Layout/LineLength:
+  Max: 120
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+  Exclude:
+    - config/application.rb
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*
+
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/*
+
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/*
+
+# New cops (0.81)
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
