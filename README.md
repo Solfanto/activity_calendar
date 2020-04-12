@@ -26,7 +26,7 @@ Github-inspired activity calendar.
   tile_height: 10,             # optional
   tile_spacing: 3,             # optional
   tile_data: { toggle: "tooltip", placement: "top", html: "true" }, # optional, compatible with Bootstrap by default
-  date_format: "on %B %d, %Y" # optional
+  date_format: "on %B %d, %Y"  # optional
 )
 ```
 
