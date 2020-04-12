@@ -41,13 +41,16 @@ Metrics/MethodLength:
 Metrics/AbcSize:
   Exclude:
     - db/migrate/*
-  Max: 30
+  Max: 40
 
 Metrics/BlockLength:
   Exclude:
     - config/environments/*
 
 Lint/SendWithMixinArgument:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
   Enabled: false
 
 # New cops (0.81)
