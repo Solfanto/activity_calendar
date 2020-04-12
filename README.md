@@ -18,8 +18,13 @@ Github-inspired activity calendar.
       title: ->(resource, date) { "#{resource.commits_count_for(date)} commits" }
     }
   },
-  default_color: "#ebedf0",
-  default_title: "no commit"
+  default_color: "#ebedf0",   # optional
+  default_title: "no commit", # optional
+  default_color: "#ffffff",   # optional
+  tile_width: 10,             # optional
+  tile_height: 10,            # optional
+  tile_spacing: 3,            # optional
+  tile_data: { toggle: "tooltip", placement: "top", html: "true" } # optional, compatible with Bootstrap by default
 )
 ```
 
