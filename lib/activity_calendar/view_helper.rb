@@ -1,11 +1,11 @@
 module ActivityCalendar::ViewHelper
-  def render_activity_calendar(calendar)
+  def render_activity_calendar(calendar, options = {})
     container_height = calendar.tile_height * 7 + calendar.tile_spacing * 8
 
     container_style = "display: flex; flex-direction: column; flex-wrap: wrap; align-content: flex-start;" \
-      "height: #{container_height}px; paddign-left: #{calendar.tile_spacing}px; padding-top: #{calendar.tile_spacing}px"
+      "height: #{container_height}px; paddign-left: #{calendar.tile_spacing}px; padding-top: #{calendar.tile_spacing}px;"
 
-    content_tag(:div, style: container_style) do
+    content_tag(:div, options.merge(style: [container_style, options[:style]].compact.join(" "))) do
       calendar.dates.first.wday.times do
         concat(
           content_tag(
