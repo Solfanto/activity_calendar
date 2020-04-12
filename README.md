@@ -1,6 +1,8 @@
 # ActivityCalendar
 Github-inspired activity calendar.
 
+![Screenshot](https://raw.github.com/Solfanto/activity_calendar/master/Screenshot.png)
+
 ## Usage
 ```ruby
 # In controller
