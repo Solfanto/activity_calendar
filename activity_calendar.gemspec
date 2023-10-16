@@ -21,4 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "memoist"
   spec.add_development_dependency "rubocop"
   spec.add_development_dependency "sqlite3"
+  spec.add_development_dependency "capybara"
+  spec.add_development_dependency "selenium-webdriver"
+  spec.add_development_dependency "puma"
 end

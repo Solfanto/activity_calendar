@@ -1,7 +1,9 @@
-require "test_helper"
+require "application_system_test_case"
 
-class ActivityCalendar::Test < ActiveSupport::TestCase
-  test "truth" do
-    assert_kind_of Module, ActivityCalendar
+class ActivityCalendarsTest < ApplicationSystemTestCase
+  test "visiting the index" do
+    visit root_url
+
+    assert_selector "#activity-calendar"
   end
 end
