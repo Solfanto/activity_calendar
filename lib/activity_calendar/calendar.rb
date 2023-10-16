@@ -1,11 +1,13 @@
 class ActivityCalendar::Calendar
-  attr_reader :tile_width, :tile_height, :tile_spacing, :tile_data, :date_format
+  attr_reader :tile_width, :tile_height, :tile_spacing, :tile_data, :border_width, :border_radius, :date_format
 
   DEFAULT_ARGS = {
     default_color: "#ffffff",
     tile_width: 10,
     tile_height: 10,
     tile_spacing: 3,
+    border_width: 1,
+    border_radius: 2,
     tile_data: { toggle: "tooltip", placement: "top", html: "true" },
     date_format: "on %B %d, %Y"
   }.freeze
@@ -21,6 +23,8 @@ class ActivityCalendar::Calendar
     @tile_height = args[:tile_height] || DEFAULT_ARGS[:tile_height]
     @tile_spacing = args[:tile_spacing] || DEFAULT_ARGS[:tile_spacing]
     @tile_data = args[:tile_data] || DEFAULT_ARGS[:tile_data]
+    @border_width = args[:border_width] || DEFAULT_ARGS[:border_width]
+    @border_radius = args[:border_radius] || DEFAULT_ARGS[:border_radius]
     @date_format = args[:date_format] || DEFAULT_ARGS[:date_format]
   end
 

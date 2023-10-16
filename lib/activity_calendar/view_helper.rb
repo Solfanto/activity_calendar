@@ -26,7 +26,9 @@ module ActivityCalendar
               :div,
               nil,
               title: "<b>#{title}</b> #{date.strftime(calendar.date_format)}",
-              style: "background-color: #{color}; width: #{calendar.tile_width}px; height: #{calendar.tile_height}px; "\
+              style: "background-color: #{color}; border-color: color-mix(in srgb, #{color} 90%, #000000 10%); " \
+                "border-style: solid; border-width: #{calendar.border_width}px; border-radius: #{calendar.border_radius}px; " \
+                "width: #{calendar.tile_width}px; height: #{calendar.tile_height}px; " \
                 "margin-bottom: #{calendar.tile_spacing}px; margin-right: #{calendar.tile_spacing}px;",
               data: calendar.tile_data
             )
