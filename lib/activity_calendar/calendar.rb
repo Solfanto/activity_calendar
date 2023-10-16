@@ -5,7 +5,7 @@ class ActivityCalendar::Calendar
     default_color: "#ffffff",
     tile_width: 10,
     tile_height: 10,
-    tile_spacing: 3,
+    tile_spacing: 2,
     border_width: 1,
     border_radius: 2,
     tile_data: { toggle: "tooltip", placement: "top", html: "true" },

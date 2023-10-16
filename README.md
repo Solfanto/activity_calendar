@@ -24,7 +24,7 @@ Github-inspired activity calendar.
   default_title: "no commit",  # optional
   tile_width: 10,              # optional
   tile_height: 10,             # optional
-  tile_spacing: 3,             # optional
+  tile_spacing: 2,             # optional
   tile_data: { toggle: "tooltip", placement: "top", html: "true" }, # optional, compatible with Bootstrap by default
   border_width: 1,              # optional
   border_radius: 2,            # optional
